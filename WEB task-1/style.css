@@ -1,0 +1,65 @@
+html, body {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+main {
+  flex: 1; /* Pushes footer to bottom */
+}
+.hero {
+  background: #dadada;
+  padding: 50px 20px;
+  text-align: center;
+}
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.cta-button:hover {
+  background: #0056b3;
+}
+section {
+  padding: 20px;
+  text-align: center;
+}
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto; /* Ensures footer is at the page bottom */
+}
+footer a {
+  color: #fff;
+  margin: 0 5px;
+}
+
+@media (max-width: 600px) {
+  header, .hero, section, footer { padding: 10px; }
+  nav a, .cta-button { display: block; margin: 10px 0; }
+}
